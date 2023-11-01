@@ -1,3 +1,5 @@
+import pg from "pg";
+
 const pool = new pg.Pool({
   user: "postgres",
   host: "localhost",
@@ -12,4 +14,4 @@ pool.on("error", (err) => {
   process.exit(-1);
 });
 
-module.exports = pool;
+export { pool };
