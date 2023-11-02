@@ -1,4 +1,4 @@
-// Import modules (?)
+// Import
 import path from "path";
 import fs from "fs";
 import pg from "pg"; // pg is the postgres database client package
@@ -8,24 +8,29 @@ import * as url from "url";
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
-// Import
 import { args } from "./validate.js";
-import { check } from "./uuid_verifier.js";
-import { validateID } from "./validate.js";
+import { getRequestID } from "./uuid_verifier.js";
+import { requestID } from "./validate.js";
 
 // Configure connection pool
 pool;
 
-// Run program
+// RUN PROGRAM
 
-//Get id from run time parameters
-check(args);
-validateID(args);
+// 1. Get request id from run time parameters - ./uuid_verifier.js
+requestID;
 
-// Check uploads folder exists
+// 2. Validate ID - ./validate.js
+getRequestID(args);
 
-// Look for json file named the same as the id in the folder - use fs.read
-// Read the json into a variable
-// open database connection
-// Run command to insert the data and set the status
-// Close connection
+// 3. Check uploads folder exists
+
+// 4. Look for json file named the same as the id in the folder - use fs.read
+
+// 5. Read the json into a variable
+
+// 6. Open database connection
+
+// 7. Run command to insert the data and set the status
+
+// 8. Close connection

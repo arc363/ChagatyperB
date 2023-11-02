@@ -1,5 +1,5 @@
 // Get id from run time parameters
-export function check(args) {
+export function getRequestID(args) {
   if (args.id) {
     console.log(`Request ID supplied`);
   } else {
