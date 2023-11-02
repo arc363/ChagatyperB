@@ -8,20 +8,13 @@ import * as url from "url";
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
-import { args } from "./validate.js";
-import { getRequestID } from "./uuid_verifier.js";
-import { requestID } from "./validate.js";
-
-// Configure connection pool
-pool;
+// import { getRequestID } from "./uuid_verifier.js";
+import { checksOnID } from "./Checks_on_requestID.js";
 
 // RUN PROGRAM
 
-// 1. Get request id from run time parameters - ./uuid_verifier.js
-requestID;
-
-// 2. Validate ID - ./validate.js
-// getRequestID(args);
+// 1. Get request id and validate it - ./requestID.js
+checksOnID(args);
 
 // 3. Check uploads folder exists
 

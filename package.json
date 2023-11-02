@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node main.js",
-    "debug": "node read_json.js -id=3c9712ce-9c5c-4969-b30f-a0bbdcddacf8"
+    "debug": "node main.js -id=3c9712ce-9c5c-4969-b30f-a0bbdcddacf8"
   },
   "author": "Sean Walker-Milne",
   "license": "ISC",
