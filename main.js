@@ -14,11 +14,11 @@ import { checksOnID, args } from "./checks_on_requestID.js";
 
 // RUN PROGRAM
 
-// 1. Get request id and validate it - ./requestID.js
+// 1. Function to perform checks on the reuqest ID
 checksOnID(args);
 
 // 3. Check uploads folder exists
-// uploadFolder(args);
+uploadFolder(args);
 
 // 4. Look for json file named the same as the id in the folder - use fs.read
 
