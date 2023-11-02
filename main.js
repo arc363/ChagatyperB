@@ -10,7 +10,7 @@ const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 // import { getRequestID } from "./uuid_verifier.js";
 import { checksOnID, args } from "./checks_on_requestID.js";
 // import { args } from "./checks_on_requestID.js";
-// import { uploadFolder } from "./check_upload_folder.js";
+import { uploadFolder } from "./check_upload_folder.js";
 
 // RUN PROGRAM
 
