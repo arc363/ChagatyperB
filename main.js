@@ -21,7 +21,7 @@ pool;
 requestID;
 
 // 2. Validate ID - ./validate.js
-getRequestID(args);
+// getRequestID(args);
 
 // 3. Check uploads folder exists
 
