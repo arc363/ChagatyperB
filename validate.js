@@ -1,3 +1,4 @@
+/*
 // Validate parameter
 import argsParser from "args-parser";
 import validate from "uuid-validate";
@@ -15,3 +16,4 @@ export function validateID(id) {
   console.log(`Request ID: ${id}`);
   return id;
 }
+*/

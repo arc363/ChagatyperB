@@ -1,3 +1,4 @@
+/*
 // Get id from run time parameters
 export function getRequestID(args) {
   if (args.id) {
@@ -6,3 +7,4 @@ export function getRequestID(args) {
     console.log(`Request ID not supplied. Use "-id=" to prefix ID.`);
   }
 }
+*/

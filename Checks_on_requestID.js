@@ -1,7 +1,6 @@
 import argsParser from "args-parser";
 import validate from "uuid-validate";
-const args = argsParser(process.argv);
-const requestID = validateID(args.id);
+export const args = argsParser(process.argv);
 
 export function checksOnID(args) {
   // Get ID from run-time parameters
@@ -12,14 +11,16 @@ export function checksOnID(args) {
   }
 
   // Validate parameter
-  const requestID = validateID(args.id);
+
   function validateID(id) {
-    const valid = validate(id);
+    // const requestID = validateID(args.id);
+    const valid = validate(args.id);
     if (!valid) {
       console.log(`ID invalid`);
       process.exit();
     }
-    console.log(`Request ID: ${id}`);
+    console.log(`Request ID: ${args.id}`);
     return id;
   }
+  validateID(args);
 }
