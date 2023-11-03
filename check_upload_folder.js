@@ -1,13 +1,9 @@
-/*
 import fs from "fs";
 
-const requestID = validateID(args.id);
-import { process_requestID, args } from "./process_requestID.js";
-
-// Check uploads folder exists & if not create one
+// Function checks uploads folder exists & if not creates one
 export function uploadFolder(id) {
-  if (!fs.existsSync(`./${requestID}`)) {
-    fs.mkdir(`./${requestID}`, (err) => {
+  if (!fs.existsSync(`./${id}`)) {
+    fs.mkdir(`./${id}`, (err) => {
       if (err) {
         console.log(err);
       }
@@ -17,4 +13,3 @@ export function uploadFolder(id) {
     console.log(`Folder already exists`);
   }
 }
-*/
