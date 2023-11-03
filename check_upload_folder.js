@@ -1,3 +1,4 @@
+/*
 import fs from "fs";
 
 const requestID = validateID(args.id);
@@ -16,3 +17,4 @@ export function uploadFolder(id) {
     console.log(`Folder already exists`);
   }
 }
+*/

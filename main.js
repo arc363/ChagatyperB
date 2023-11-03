@@ -10,7 +10,7 @@ const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 // import { getRequestID } from "./uuid_verifier.js";
 import { process_requestID, args } from "./process_requestID.js";
 // import { args } from "./checks_on_requestID.js";
-import { uploadFolder } from "./check_upload_folder.js";
+// import { uploadFolder } from "./check_upload_folder.js";
 
 // RUN PROGRAM
 
@@ -18,7 +18,7 @@ import { uploadFolder } from "./check_upload_folder.js";
 process_requestID(args);
 
 // 3. Check uploads folder exists
-uploadFolder(args);
+// uploadFolder(args);
 
 // 4. Look for json file named the same as the id in the folder - use fs.read
 
