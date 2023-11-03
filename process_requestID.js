@@ -6,7 +6,7 @@ export const args = argsParser(process.argv);
 // ----------- FUNCTION TO PERFORM CHECKS ON REQUEST ID -------------
 
 // Fuction performs checks for existence of requestID and then, if true, checks if it's valid
-export function checksOnID(args) {
+export function process_requestID(args) {
   // Get ID from run-time parameters
   if (args.id) {
     console.log(`Request ID supplied`);

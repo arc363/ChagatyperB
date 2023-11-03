@@ -8,14 +8,14 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 // import { getRequestID } from "./uuid_verifier.js";
-import { checksOnID, args } from "./checks_on_requestID.js";
+import { process_requestID, args } from "./process_requestID.js";
 // import { args } from "./checks_on_requestID.js";
 import { uploadFolder } from "./check_upload_folder.js";
 
 // RUN PROGRAM
 
 // 1. Function to perform checks on the reuqest ID
-checksOnID(args);
+process_requestID(args);
 
 // 3. Check uploads folder exists
 uploadFolder(args);
