@@ -1,18 +1,13 @@
-// import path from "path";
-// import pg from "pg"; // pg is the postgres database client package
-// import * as pool from "./config.js";
+// Import from modules and define variables
 import * as url from "url";
-
-// const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
-
 import { process_requestID } from "./process_requestID.js";
 import argsParser from "args-parser";
-// import { uploadFolder } from "./check_upload_folder.js";
 import { checkJson } from "./checkJson.js";
 import { read_JSON } from "./read_json.js";
 const args = argsParser(process.argv);
-import { uploadSubmission } from "./upload_to_database.js";
+import { uploadToDatabase } from "./upload_to_database.js";
+
 // RUN PROGRAM
 
 // 1. Function to perform checks on the reuqest ID
@@ -25,6 +20,4 @@ const id = process_requestID(args);
 checkJson(id);
 
 // 4. Read the json into a variable
-read_JSON(id).then((jsonData) => uploadSubmission(id, jsonData)); // 5. Open database connection & run command to insert the data and set the status
-
-// 6. Close connection
+read_JSON(id).then((jsonData) => uploadToDatabase(id, jsonData)); // 5. Open database connection & run command to insert the data; set the status; close connection
