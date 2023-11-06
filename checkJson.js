@@ -4,7 +4,7 @@ import fs from "fs";
 export function checkJson(id) {
   if (!fs.existsSync(`./${id}.json`)) {
     console.log(`Failed to locate JSON file`);
-    process.exit;
+    process.exit();
   }
   console.log(`JSON file located`);
 }

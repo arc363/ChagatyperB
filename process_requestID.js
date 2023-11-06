@@ -32,4 +32,5 @@ export function validateID(id) {
   }
   // Print ID if it has been validated
   console.log(`Request ID: ${id}`);
+  return id;
 }

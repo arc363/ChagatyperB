@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node main.js",
-    "debug": "node main.js -id=3c9712ce-9c5c-4969-b30f-a0bbdcddacf8"
+    "debug": "node main.js -id=4a125af7-b487-47fd-8a30-c36eec306325"
   },
   "author": "Sean Walker-Milne",
   "license": "ISC",
