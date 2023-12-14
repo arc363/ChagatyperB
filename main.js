@@ -9,6 +9,7 @@ const args = argsParser(process.argv);
 import { uploadToDatabase } from "./upload_to_database.js";
 
 // RUN PROGRAM
+// DEBUG
 
 // 1. Function to perform checks on the reuqest ID
 const id = process_requestID(args);
